@@ -2,6 +2,8 @@
 
 A responsive website and Streamlit app for Corvix Academy in Johar Town, Lahore.
 
+**Live Streamlit app:** https://corvix-academy-lahore.streamlit.app/
+
 ## Courses
 
 - **Artificial Intelligence (2 months):** Python, machine learning, deep learning, agents, chatbots, LLMs, and SLMs. Instructor: Shahzad Ishaq.
@@ -27,6 +29,4 @@ Install dependencies with python -m pip install -r requirements.txt, then run st
 
 ## Deploy
 
-This repository is prepared for Streamlit Community Cloud. Choose this repository, branch main, and app.py as the entry point. Keep app secrets out of Git.# Corvix Institute of Technology
-
-Practical courses in artificial intelligence, graphic design, and e-commerce in Johar Town, Lahore.
+This app is deployed on Streamlit Community Cloud from this repository's main branch using app.py. Keep app secrets out of Git.
