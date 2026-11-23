@@ -11,10 +11,6 @@ import streamlit as st
 
 
 ROOT = Path(__file__).resolve().parent
-SPREADSHEET_URL = (
-    "https://docs.google.com/spreadsheets/d/"
-    "1LpVDhrST0QoJJc2Rpsu2cFlQRUnuKgCwQRruUVX6Jwo/edit"
-)
 COURSES = [
     {
         "name": "Artificial Intelligence",
@@ -128,17 +124,10 @@ with brand:
     st.markdown("# corvix<span style='color:#83b43d'>.</span>", unsafe_allow_html=True)
     st.caption("ACADEMY · LEARN. CREATE. GROW.")
 with location:
-    location_info, sheet_link = st.columns([1.2, 1], vertical_alignment="center")
+    location_info, admissions_note = st.columns([1.2, 1], vertical_alignment="center")
     with location_info:
         st.markdown("**Johar Town, Lahore**  \nPractical skills for what's next.")
-    with sheet_link:
-        st.link_button(
-            "Google Sheet",
-            SPREADSHEET_URL,
-            icon=":material/table_chart:",
-            width="stretch",
-        )
-
+    with admissions_note:         st.caption("Enrollment enquiries are open.")
 home_tab, courses_tab, about_tab, enroll_tab = st.tabs(
     ["Home", "Courses", "About", "Admissions"]
 )
@@ -209,11 +198,6 @@ with about_tab:
         st.caption(
             "Instructor for AI, graphic design, and the Amazon, Etsy, Daraz, and Shopify modules. "
             "TikTok Seller Center and eBay modules are taught by Ali Abdullah."
-        )
-        st.link_button(
-            "Open the enrollment spreadsheet",
-            SPREADSHEET_URL,
-            icon=":material/table_chart:",
         )
 
 with enroll_tab:
