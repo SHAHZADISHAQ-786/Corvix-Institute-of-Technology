@@ -1,5 +1,3 @@
 window.CORVIX_CONFIG = {
-  googleSpreadsheetUrl: "https://docs.google.com/spreadsheets/d/1LpVDhrST0QoJJc2Rpsu2cFlQRUnuKgCwQRruUVX6Jwo/edit",
-  // Paste the deployed Google Apps Script web app URL here.
-  googleSheetsEndpoint: ""
+    googleSheetsEndpoint: "https://script.google.com/macros/s/AKfycbyazXomxJZSYZiP_shX_0Gmn-8O9_sRcVZSgVlolu4cg_r1KM1ttEu9CglfKTej69LLOQ/exec"
 };
