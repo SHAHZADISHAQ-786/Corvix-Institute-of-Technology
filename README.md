@@ -14,14 +14,14 @@ A responsive website and Streamlit app for Corvix Academy in Johar Town, Lahore.
 
 ## Google Sheets enrollment
 
-The supplied spreadsheet is linked from the site and app: [Open Corvix enrollment spreadsheet](https://docs.google.com/spreadsheets/d/1LpVDhrST0QoJJc2Rpsu2cFlQRUnuKgCwQRruUVX6Jwo/edit).
+Student enquiries submitted through the website or Streamlit form are saved using the configured Apps Script endpoint. The spreadsheet itself is not linked publicly.
 
 To store form submissions, bind a Google Apps Script project to the sheet and use the file at apps-script/Code.gs. Run setup() once, then deploy the script as a web app (execute as you; access for anyone).
 
 - Set the deployed /exec URL in config.js for the static website.
 - Add GOOGLE_SHEETS_ENDPOINT in Streamlit app secrets for the Streamlit app.
 
-Until these endpoint settings are deployed, the forms direct students to contact Corvix instead of claiming submissions were stored.
+The form reports success only after Apps Script confirms that an enquiry was saved.
 
 ## Run locally
 
